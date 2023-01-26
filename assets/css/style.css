@@ -1,0 +1,45 @@
+.app {
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "encabezado"
+    "contenido"
+    "rodapie";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+    
+}
+
+.encabezado {
+   display: flex;
+    grid-area: encabezado;
+    align-items: center;
+    padding: 0 2rem;
+
+}
+.menu__link{
+    color: #333333;
+    padding: .5rem 1rem;
+}
+
+.menu__link:hover, .menu__link:active{
+    border-bottom: 2px solid #0073e6;
+}
+.contenido {
+    
+    grid-area: contenido;
+
+}
+
+.rodapie { 
+    background: #fdfdfd;
+    grid-area: rodapie;
+    color: #333333;
+    padding: 0.5rem;
+    text-align: center;
+    border: .5px outset #333333;
+    
+
+    
+}
